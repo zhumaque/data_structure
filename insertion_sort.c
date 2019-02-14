@@ -17,6 +17,7 @@ int main(void)
 		int key = num_list[j];
 		int i = j - 1;
 
+		//why ??
 		while (i > 0 && num_list[i] > key)
 		{
 			num_list[i+1] = num_list[i];
@@ -34,7 +35,7 @@ int main(void)
 	clock_t end = clock();
 	double time = (double)(end - start)/ CLOCKS_PER_SEC;
 
-	printf("%f", time); 
+	printf("%f\n", time); 
 
 
 	return 0;
